@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+
+<script language="javascript" src="static/js/index.js"></script>
+
+
+   <div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Online Mart Bill</h4>
+                        <hr>
+                        <div class="form">
+                            <form action="/math" method="POST"> 
+                                <div class="table-responsive">
+
+                                    <table id="faqs" class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Item</th>
+                                                <th>count</th>
+                                                <th>price</th>
+                                                
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" class="form-control" placeholder="Product name"></td>
+                                                <td><input type="text" placeholder="count/kg" class="form-control" ></td>                                        
+                                                <td><input type="text" placeholder="Price" class="form-control" ></td>
+                                                
+                                                <td class="mt-10"><button class="badge badge-danger"><i class="fa fa-trash"></i> Delete</button></td>
+                                            </tr>
+
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="text-center"><button onclick="addfaqs();" class="badge badge-success"><i class="fa fa-plus"></i> ADD NEW</button></div>
+                                
+                                <input type="submit" value="Calculate">                 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
